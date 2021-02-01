@@ -1,0 +1,59 @@
+body {
+  background-color: lightcyan;
+  background-image: url("https://source.unsplash.com/yDAT2YMc85Q/1900x900");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: #333;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+img {
+  float: left;
+}
+section {
+  clear: both;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+a {
+  color: lavender;
+  text-decoration: underline;
+}
+header {
+  background: rgb(126, 85, 85);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background-color: green;
+  border: 10px solid yellow;
+}
+.box2 {
+  background-color: pink;
+  border: 10px double orange;
+}
+.box3 {
+  background-color: blue;
+  border: 10px dashed brown;
+  border-bottom: greenyellow;
+}
+.box4 {
+  background-color: red;
+  border: 20px groove orange;
+  border-radius: 20px;
+}

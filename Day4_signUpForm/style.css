@@ -1,0 +1,25 @@
+#sty {
+  font-family: monospace;
+  border-collapse: collapse;
+  width: 100%;
+}
+#sty td,
+#sty th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#sty tr:nth-child(even) {
+  background-color: rgb(198, 214, 214);
+}
+#sty tr:hoover {
+  background-color: #ddd;
+}
+
+#sty th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: darkgreen;
+  color: white;
+}
