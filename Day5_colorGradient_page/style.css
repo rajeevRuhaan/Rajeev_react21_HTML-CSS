@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "source Sans Pro", sans-serif;
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(to right, #223344, #443322);
+
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: aliceblue;
+  text-align: center;
+}
+h1 {
+  margin-top: 50px;
+}
+h2 {
+  padding-top: 50px;
+  border-bottom: 1px dashed #c6c6c6;
+}
+input[type="submit"] {
+  background-color: #333333;
+  display: block;
+  margin: 50px;
+}
+.container {
+  max-width: 800px;
+}

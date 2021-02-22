@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Generator</title>
+</head>
+<body>
+<div class="container">
+    <div>
+        <br><br><h2>Generate custone gradient background is easy</h2>
+    </div>
+    <hr>
+    <form>
+    <div >
+        <br><br><p>At first, choose the direction:</p><br>
+    <div class="direction">
+        <input checked type="radio" name="direction" id="lefttoright" value="to right">
+        <label for="lefttoright">Left to Right</label>
+    </div>
+    <div class="direction">
+        <input type="radio" name="direction" id="righttoleft" value="to left">
+        <label for="righttoleft">Right to Left</label>
+    </div>
+    <div class="direction">
+        <input type="radio" name="direction" id="toptobottom" value="to bottom">
+        <label for="toptobottom">Top to Bottom</label>
+    </div>
+    <div class="direction">
+        <input type="radio" name="direction" id="bottomtotop" value="to top">
+        <label for="bottomtotop">Bottom to Top</label><br><br><br>
+    </div>
+    <hr>
+    <div>
+        <h3>Second, choose color:</h3>
+        <span>
+            <input type="color"id="color1" value="#223344">
+            <input type="color" id="color2" value="#443322">
+        </span>
+    </div>
+
+    <hr>
+    <div>
+        <br><h3>Third, generate your gradient</h3>
+        <input type="button" value="Generator"><br><br>
+    </div>
+</form>
+    <hr>
+    <div>
+        <br><h3>Finally, copy tour CSS code:</h3><br>
+        
+    </div>
+
+</div>
+<p id="element" >
+    
+</p>
+<script src="script.js"></script>
+</body>
+</html>
