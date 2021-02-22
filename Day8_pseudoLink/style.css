@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: red;
+  font-size: 1.2rem;
+}
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(46, 37, 68);
+  text-decoration: underline;
+}
+
+a:focus {
+  color: green;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  background: grey;
+}
+li:first-child {
+  background: rgb(47, 206, 255);
+  color: blue;
+}
+li:last-child {
+  background: rgb(182, 28, 92);
+  color: rgb(206, 36, 141);
+}
+li:nth-child(2n + 3) {
+  background: rgb(224, 19, 12);
+} /* last number 3 give when to start and 2n goes every second to chage background */
+
+button::after {
+  content: "here is invisible text";
+}
+
+.box::after {
+  content: "Here is invisible text";
+  display: block;
+  position: block;
+}
+#hero-banner {
+  height: 25vh;
+  background: url("https://source.unsplash.com/1600 × 1500?sky") no-repeat fixed
+    center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#hero-banner::after {
+  content: "This is another invisible things";
+  /* background-color: rgb(227, 229, 231);*/
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+section h2 {
+  z-index: 1;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background: greenyellow;
+}
