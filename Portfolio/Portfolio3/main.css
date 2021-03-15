@@ -1,0 +1,74 @@
+/* About Me section */
+#about {
+  margin: 30px auto;
+  height: 400px;
+  width: 1100px;
+  background-image: radial-gradient(rgb(235, 235, 241), #0ef5fd);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.9s;
+}
+
+.aboutMe {
+  margin: 20px;
+}
+h1 {
+  text-decoration: underline;
+  margin: 30px;
+}
+h3 {
+  margin: 20px;
+}
+p {
+  padding-bottom: 10px;
+}
+/* Skills section */
+
+#skills {
+  padding: 50px;
+  min-height: 500px;
+  scroll-margin-top: 5rem;
+  color: black;
+}
+#skills .skillContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: underline;
+}
+#skills .skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 5rem;
+}
+.skill:nth-child(odd) {
+  background-color: rgb(288, 288, 288);
+}
+.skill {
+  background-color: rgb(247, 247, 247);
+  padding: 2rem;
+  border: 1px solid rgb(222, 222, 222);
+  box-shadow: 0px 0px 5px, rgb(234, 234, 234);
+}
+
+/* progress bar decoration */
+progress[value] {
+  height: 25px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(40, 108, 235, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background: rgb(54, 228, 175);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}

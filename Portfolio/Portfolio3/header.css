@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+}
+input,
+textarea,
+button {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+.bg {
+  background-color: rgb(72, 235, 235);
+}
+/**************** Header area ****************/
+
+header {
+  background: url(image/Mood-board-Rajeev.png) no-repeat fixed center
+    center/cover;
+}
+.container {
+  /* position: fixed; */
+  padding-top: 10px;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+.container .main-nav {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+header .logo a {
+  font-size: 2rem;
+  margin-left: 30px;
+}
+header nav a {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+header nav a:hover {
+  font-size: 1.2rem;
+  /* background-color: rgb(114, 191, 241); */
+  text-decoration: underline;
+}
+#hero-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-banner h2 {
+  text-shadow: 5px 5px 5px rgb(132, 132, 243);
+  font-size: 4rem;
+  color: rgb(16, 33, 185);
+}
