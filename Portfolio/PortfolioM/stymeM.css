@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    color: #333;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  img {
+    height: 200px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-weight: 300;
+  }
+  h2 {
+    margin: 32px 0;
+  }
+  
+  p {
+    margin: 16px 0;
+    line-height: 1.5;
+  }
+  /**************** Header area ****************/
+  
+  header {
+    min-height: 1000px;
+    text-align: center;
+    background: url("https://source.unsplash.com/n7a2OJDSZns/") no-repeat fixed
+      center center/cover;
+  }
+  
+  header .container {
+    padding: 42px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin-top: 32px;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    padding: 0 16px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /**************** Main area ****************/
+  
+  #hero-banner h2 {
+    font-size: 75px;
+    color: #333;
+    text-align: center;
+    padding-top: 400px;
+  }
+  
+  #past,
+  #present,
+  #future {
+    padding: 50px;
+    min-height: 500px;
+  }
+  #present {
+    background: rgb(230, 230, 230);
+  }
+  
+  #past img,
+  #present img,
+  #future img {
+    float: left;
+    margin-right: 32px;
+  }
+  
+  #present img {
+    float: right;
+    margin-left: 32px;
+  }
+  
+  /**************** Footer area ****************/
+  
+  footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+  }

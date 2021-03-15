@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+}
+input,
+textarea,
+button {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 300;
+}
+h2 {
+  margin: 2rem 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.bg {
+  background-color: rgb(182, 245, 176);
+}
+/** Header area decoration  */
+
+header {
+  min-height: 100vh;
+  text-align: center;
+  background: url(image/Mood-board-Rajeev.png) no-repeat fixed center
+    center/cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; */
+}
+
+/* header .container {
+  padding: 2.5rem;
+} */
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+header nav a {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+header nav a:hover {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+#hero-banner {
+  height: 135vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-banner h2 {
+  text-shadow: 5px 5px 5px rgb(132, 132, 243);
+  font-size: 4rem;
+  color: rgb(16, 33, 185);
+}
+
+/***** main    *****/
+#skills {
+  padding: 50px;
+  min-height: 500px;
+  scroll-margin-top: 5rem;
+}
+
+/***Skills*****/
+#skills img {
+  float: left;
+  margin-right: 2rem;
+}
+
+#skills .skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.skill:nth-child(odd) {
+  background-color: rgb(228, 228, 228);
+}
+
+.skill {
+  background-color: rgb(247, 247, 247);
+  padding: 2rem;
+  border: 1px solid rgb(222, 222, 222);
+  box-shadow: 0px 0px 5px rgb(234, 234, 234);
+}
+progress[value] {
+  height: 25px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background: rgb(40, 153, 29);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+/**************** Footer area ****************/
+
+footer {
+  background-color: rgb(72, 120, 252);
+  text-align: center;
+  color: white;
+  padding: 8px;
+}
+footer .copyright {
+  margin-top: 2rem;
+  font-size: 12px;
+}
+
+/**************** Form ****************/
+
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer button {
+  background-color: rgb(3, 105, 29);
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  margin-left: 205px;
+  font-size: inherit;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.material-icons {
+  font-size: 1rem;
+}

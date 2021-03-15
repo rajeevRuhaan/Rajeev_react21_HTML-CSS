@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Portfolio Project" />
+    <meta name="autor" content="Rajeev Sah" />
+    <meta name="keywords" content="HTML5, CSS3, Portfoloi, school-project" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="main-nav">
+          <div class="logo"><h1>Rajeev Sah</h1></div>
+          <nav>
+            <ul>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./cv.html">CV</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <section id="hero-banner">
+          <h2>Welcome to my Portfolio page</h2>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills_group">
+            <div class="skill">
+              <i class="demo-icon icon-html5"></i>
+              <p>HTML5</p>
+              <progress value="80" max="100">32%</progress>
+            </div>
+            <div class="skill">
+              <i class="demo-icon icon-css3"></i>
+              <p>CSS3</p>
+              <progress value="50" max="100">32%</progress>
+            </div>
+            <div class="skill">
+              <i class="demo-icon icon-group"></i>
+              <p>JavaScript</p>
+              <progress value="40" max="100">32%</progress>
+            </div>
+            <div class="skill">
+              <i class="demo-icon icon-award"></i>
+              <p>React</p>
+              <progress value="5" max="100">32%</progress>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message to me</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div>
+            <button type="submit">Send Message</button>
+          </div>
+          <p class="copyright">copyright &copy; My Website 2021</p>
+        </form>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(171, 218, 240);
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+input,
+textarea,
+button {
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+i {
+  font-size: 3rem;
+}
+
+.bg {
+  background-color: #fff;
+}
+/**************** Header area ****************/
+
+header {
+  min-height: 84vh;
+  text-align: center;
+  background: url(image/hummingBird.png) no-repeat fixed center center/cover;
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; */
+}
+.bg {
+  background-color: cadetblue;
+}
+
+header .container {
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  /* background-color: cadetblue; */
+  position: fixed;
+}
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+header nav a {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+header nav a:hover {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+#hero-banner {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-banner h2 {
+  text-shadow: 5px 5px 5px rgb(132, 132, 243);
+  font-size: 2rem;
+  color: rgb(16, 33, 185);
+}
+/**************** Main area ****************/
+main {
+  background-color: rgb(220, 224, 231);
+  width: 80%;
+  margin-top: auto;
+  margin-left: 10%;
+
+  display: grid;
+  grid-gap: 5px;
+  border: 1px solid black;
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  grid-auto-rows: 1fr;
+}
+.ab {
+  align-items: center;
+  padding-left: 10px;
+}
+.a {
+  background-color: red;
+  margin-top: -100px;
+  margin-left: 50px;
+}
+.b {
+  background-color: rgb(206, 168, 168);
+  grid-column: 2/4;
+}
+.c {
+  background-color: red;
+}
+.d {
+  background-color: rgb(190, 148, 148);
+  /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4; */
+}
