@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item-a {
+        height: 100px;
+        grid-area: header;
+        background-color: gold;
+        background: url("https://source.unsplash.com/100 × 500?sky") no-repeat
+          fixed center center/cover;
+      }
+      .item-b {
+        grid-area: main;
+        background-color: indigo;
+      }
+      .item-c {
+        grid-area: sidebar;
+        background-color: lawngreen;
+      }
+      .item-d {
+        grid-area: footer;
+        background-color: lightsalmon;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 200px 100px 100px 100px;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "header header header header"
+          "main main . sidebar"
+          "footer footer footer footer";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="item-a">Header</div>
+        <div class="item-b">main</div>
+        <div class="item-c">sidebar</div>
+        <div class="item-d">footer</div>
+      </div>
+    </header>
+  </body>
+</html>

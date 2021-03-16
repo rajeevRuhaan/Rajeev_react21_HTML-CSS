@@ -1,0 +1,14 @@
+body {
+  background: rgb(33, 76, 170, 0.6);
+}
+ul {
+  background-color: chocolate;
+  list-style-type: square;
+}
+html {
+  scroll-behavior: smooth;
+}
+ol {
+  background-color: darkblue;
+  -color: red;
+}

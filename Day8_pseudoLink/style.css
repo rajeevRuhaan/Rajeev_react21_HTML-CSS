@@ -80,6 +80,7 @@ button::after {
   align-items: center;
   position: relative;
 }
+
 #hero-banner::after {
   content: "This is another invisible things";
   /* background-color: rgb(227, 229, 231);*/
