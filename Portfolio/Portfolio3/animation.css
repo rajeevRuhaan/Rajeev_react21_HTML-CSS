@@ -3,20 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   background-color: white;
   font-family: "Raleway", sans-serif;
-  color: #333;
-}
-input,
-textarea,
-button {
-  font-family: "Raleway", sans-serif;
-}
+  margin: 1rem;
+} */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -33,20 +30,9 @@ a {
   text-decoration: none;
   color: rgb(10, 10, 10);
 }
-i {
-  font-size: 3rem;
-}
 
-.bg {
-  background-image: radial-gradient(rgb(240, 32, 146), rgb(52, 232, 245));
-  /* background-color: #24cacf; */
-}
 /**************** Header area ****************/
 
-header {
-  /* background: url(image/Mood-board-Rajeev.png) no-repeat fixed center
-    center/cover; */
-}
 .main-nav {
   position: fixed;
   top: 0;
@@ -64,9 +50,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-/* #mobileButton {
-    display: none;
-  } */
+
 header nav ul {
   list-style-type: none;
 }
@@ -92,23 +76,12 @@ header nav a:hover {
   /* background-color: rgb(114, 191, 241); */
   text-decoration: underline;
 }
-#hero-banner {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#hero-banner h2 {
-  text-shadow: 5px 5px 5px rgb(132, 132, 243);
-  font-size: 3rem;
-  color: rgb(16, 33, 185);
-  text-align: center;
-}
 
 /** Animation**/
 :root {
   --element-color: radial-gradient(rgb(198, 198, 249), rgb(156, 156, 203));
+  --background-color: rgb(84, 84, 230);
+  --primary-color: rgb(187, 15, 121);
 }
 /* body {
   height: 100%;
@@ -132,9 +105,14 @@ header nav a:hover {
 
 /***  */
 body {
+  margin: 1rem;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+}
+main {
+  margin-left: 100px;
+  align-items: center;
 }
 
 @keyframes gradient {
@@ -153,6 +131,119 @@ body {
 section {
   margin-top: 100px;
 }
+/** adding rotating card*/
+.second-task {
+  background: var(--background-color);
+  height: 100px;
+  width: 100px;
+  transition: all 2s;
+}
+.second-task:hover {
+  transform: rotate(180deg);
+  background: var(--primary-color);
+}
+/* task 3 */
+.third-task {
+  background: var(--primary-color);
+  height: 100px;
+  width: 100px;
+  transition: all 2s;
+  padding: 1rem;
+}
+.third-task:hover {
+  height: 100px;
+  width: 75px;
+}
+.third-task p {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.third-task:hover p {
+  opacity: 1;
+}
+
+/* task 5 */
+.fifth-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background: var(--primary-color);
+}
+
+/* TOP side */
+.fifth-task::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 200px;
+  border-top: 5px solid var(--background-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover::before {
+  right: 0;
+}
+/* Right side */
+
+.fifth-task::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-right: 5px solid var(--background-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover::after {
+  top: 0;
+}
+
+/* Bottom side */
+
+.fifth-task h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  border-bottom: 5px solid var(--background-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::before {
+  left: 0;
+}
+
+/* Left side */
+
+.fifth-task h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  border-left: 5px solid var(--background-color);
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::after {
+  bottom: 0;
+}
+
 .card {
   padding: 30px 10px;
   /* display: flex; */
@@ -216,13 +307,13 @@ h1 {
 
 .circle {
   background-image: var(--element-color);
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 200px auto;
+  margin: 100px auto;
   animation-name: example;
   animation-duration: 60s;
   animation-iteration-count: 3;
