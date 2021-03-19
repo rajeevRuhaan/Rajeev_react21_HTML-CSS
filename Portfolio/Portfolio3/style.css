@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+}
+input,
+textarea,
+button {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+i {
+  font-size: 3rem;
+}
+
+.bg {
+  background-color: #0ef5fd;
+}
+/**************** Header area ****************/
+
+header {
+  background: url(image/Mood-board-Rajeev.png) no-repeat fixed center
+    center/cover;
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.main-nav .container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* #mobileButton {
+  display: none;
+} */
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+header .logo a {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+header nav a {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+header nav a:hover {
+  font-size: 1.2rem;
+  /* background-color: rgb(114, 191, 241); */
+  text-decoration: underline;
+}
+#hero-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-banner h2 {
+  text-shadow: 5px 5px 5px rgb(132, 132, 243);
+  font-size: 3rem;
+  color: rgb(16, 33, 185);
+  text-align: center;
+}
+
+/* About Me section */
+#about {
+  margin: 30px auto;
+  height: 400px;
+  width: 90%;
+  background-image: radial-gradient(rgb(235, 235, 241), #0ef5fd);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: all 0.9s; */
+}
+#about img {
+  width: 50%;
+  height: 300px;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+.aboutMe {
+  margin: 10px;
+}
+
+h1 {
+  text-decoration: underline;
+  margin: 10px;
+}
+h3 {
+  margin: 10px;
+}
+p {
+  margin: 10px;
+  padding-bottom: 5px;
+}
+/** Project section  */
+#project {
+  padding: 20px;
+  /*  min-height: 500px; */
+  min-height: 50px;
+  scroll-margin-top: 5rem;
+}
+#project .project_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+#project .box {
+  background-color: white;
+  width: 32%;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 1px solid #eee;
+}
+#project .box:hover {
+  box-shadow: 0 0 25px #8a8a8a;
+}
+#project .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+/** Skills section */
+
+#skills {
+  padding: 50px;
+  min-height: 400px;
+  scroll-margin-top: 5rem;
+  color: black;
+}
+/* #skills .skillContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: underline;
+} */
+#skills .skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+.skill:nth-child(odd) {
+  background-color: rgb(288, 288, 288);
+}
+.skill {
+  background-color: rgb(247, 247, 247);
+  padding: 2rem;
+  border: 1px solid rgb(222, 222, 222);
+  box-shadow: 0px 0px 5px, rgb(234, 234, 234);
+}
+#skills .skill:hover {
+  box-shadow: 0 0 25px #8a8a8a;
+}
+
+/* progress bar decoration */
+progress[value] {
+  height: 25px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(40, 108, 235, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background: rgb(54, 228, 175);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+/**************** Footer area ****************/
+
+#footer {
+  background-color: rgb(72, 235, 235);
+  text-align: center;
+  color: white;
+  padding: 8px;
+}
+#footer .footercontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#footer .copyright {
+  margin-top: 2rem;
+  font-size: 12px;
+}
+
+/**************** Form ****************/
+#footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+#footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+#footer form label {
+  width: 100px;
+  display: inline-block;
+  text-align: left;
+}
+#footer form .form-group input,
+#footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+#footer form .form-group textarea {
+  min-height: 100px;
+}
+#footer button {
+  background-color: rgb(57, 132, 243);
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+/***/
+@media (max-width: 899px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  #mobileButton .material-icons {
+    font-size: 2rem;
+  }
+  /*  nav ul {
+    display: none;
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+  }
+  nav.resposnive ul {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 86px;
+  }
+  nav.responsive ul li {
+    display: block;
+  }
+  nav.responsive ul li a {
+    display: block;
+    padding: 1rem 2rem;
+  } */
+}

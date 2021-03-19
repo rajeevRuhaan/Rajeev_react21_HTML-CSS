@@ -14,25 +14,31 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="shortcut icon" href="image/favicon1.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Portfolio-3-Rajeev</title>
   </head>
   <body>
     <!-- Header  -->
     <header>
-      <div class="container">
-        <div class="main-nav">
+      <div class="main-nav">
+        <div class="container">
           <div class="logo"><a href="./index.html">Rajeev Sah</a></div>
           <nav>
+            <!-- <button id="mobileButton">
+              <span class="material-icons"> menu </span>
+            </button> -->
             <ul>
               <li><a href="#about">About Me</a></li>
               <li><a href="#skills">Skills</a></li>
-              <li><a href="./gallery.html">Gallery</a></li>
               <li><a href="./resume.html">Resume</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
               <li><a href="./animation.html">Animation</a></li>
               <li><a href="#footer">Contact</a></li>
             </ul>
@@ -63,8 +69,39 @@
           </p>
         </div>
       </section>
+      <section id="project">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project_boxes">
+            <div class="box">
+              <!--  <img
+                src="https://source.unsplash.com/1600x900/?book"
+                alt="time"
+              /> -->
+              <h3>Coming soon</h3>
+              <a href="#">Link</a>
+            </div>
+            <div class="box">
+              <!-- <img
+                src="https://source.unsplash.com/1600x900/?book"
+                alt="time"
+              /> -->
+              <h3>Coming soon</h3>
+              <a href="#">Link</a>
+            </div>
+            <div class="box">
+              <!-- <img
+                src="https://source.unsplash.com/1600x900/?book"
+                alt="time"
+              /> -->
+              <h3>Coming soon</h3>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="skills">
-        <div class="skillContainer">
+        <div class="container">
           <h2>Skills</h2>
           <div class="skills_group">
             <div class="skill">
@@ -94,7 +131,7 @@
     <!-- Footer content -->
     <footer id="footer">
       <div class="footerContainer">
-        <h2>Contact me</h2>
+        <h2 id="contact">Contact me</h2>
         <form>
           <div class="form-group">
             <label for="name">Your name</label>

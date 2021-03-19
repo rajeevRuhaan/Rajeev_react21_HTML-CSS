@@ -7,35 +7,137 @@
 
     <meta name="description" content="Portfolio Project" />
     <meta name="autor" content="Rajeev Sah" />
-    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <meta name="keywords" content="HTML5, CSS3, Gallery, school-project" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="shortcut icon" href="image/favicon1.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="header.css" />
-    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Gallery Page</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="main-nav">
-          <div class="logo"><a href="./index.html">Rajeev Sah</a></div>
+      <div class="main-nav">
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html"><h1>Rajeev Sah</h1></a>
+          </div>
           <nav>
             <ul>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./index.html#about">About Me</a></li>
+              <li><a href="./index.html#skills">Skills</a></li>
               <li><a href="./resume.html">Resume</a></li>
               <li><a href="./animation.html">Animation</a></li>
-              <li><a href="#footer">Contact</a></li>
+              <li><a href="./index.html, #footer">Contact</a></li>
             </ul>
           </nav>
         </div>
+        <section id="hero-banner">
+          <div class="card">
+            <div class="card_part card_part-one"></div>
+
+            <!-- Photo 2 -->
+            <div class="card_part card_part-two"></div>
+
+            <!-- Photo 3 -->
+            <div class="card_part card_part-three"></div>
+
+            <!-- Photo 4 -->
+            <div class="card_part card_part-four"></div>
+          </div>
+        </section>
       </div>
     </header>
+
+    <main>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery-grid">
+            <div class="grid-item-1 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?sky"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-2 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?storm"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-3 grid-div">
+              1
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?flower"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-4 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?cold"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-5 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?bus"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-6 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?train"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-7 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?car"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-8 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?dog"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-9 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/1600x900/?cat"
+                alt="random pic from unsplash"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <!-- <div class="container"></div> -->
+        <p class="copyright">Copyright &copy; My Website 2021</p>
+      </div>
+      <button id="backToTop">
+        Top<span class="material-icons"> arrow_upward </span>
+      </button>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
