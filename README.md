@@ -1,7 +1,7 @@
 # Rajeev_react21_HTML-CSS
 
 This repository is created for practice school work.
-There are list of folder where I have practiced to have different task on HTML & CSS.
+There are list of folder where I have practiced to have different task on HTML & CSS. ..
 
 Here small description on each exercise.
 **Technologies used**
